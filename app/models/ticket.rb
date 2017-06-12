@@ -12,6 +12,6 @@ class Ticket < ApplicationRecord
     "Please refund my order"
   ]
 
-  validates :order_id, :email, :problem, :preferred_solution, presence: true
+  validates :order_id, :problem, :preferred_solution, presence: true
 
 end

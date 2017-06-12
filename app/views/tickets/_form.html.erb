@@ -12,11 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :ticket_email %>
-  </div>
-
-  <div class="field">
     <%= form.label :order_id %>
     <%= form.select :order_id, customer_orders(@orders), include_blank: true, id: :ticket_order_id %>
   </div>
