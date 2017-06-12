@@ -2,7 +2,6 @@ class TicketsController < ApplicationController
   before_action :retrieve_orders, only: [:new, :create]
 
   def new
-    @orders = Order.all
     @ticket = Ticket.new
   end
 
@@ -25,6 +24,10 @@ class TicketsController < ApplicationController
 
   def ticket_params
     params.require(:ticket).permit(:order_id, :problem, :preferred_solution)
+  end
+
+  def retrieve_orders
+    @orders = Order.all
   end
 
   def find_order
