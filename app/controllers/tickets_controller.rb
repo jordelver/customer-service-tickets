@@ -1,10 +1,12 @@
 class TicketsController < ApplicationController
 
   def new
+    @orders = Order.all
     @ticket = Ticket.new
   end
 
   def create
+    @orders = Order.all
     @ticket = Ticket.new(ticket_params)
 
     respond_to do |format|
