@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :problem %>
-    <%= form.text_field :problem, id: :ticket_problem %>
+    <%= form.select :problem, Ticket::PROBLEMS, include_blank: true, id: :ticket_problem %>
   </div>
 
   <div class="field">
     <%= form.label :preferred_solution %>
-    <%= form.text_field :preferred_solution, id: :ticket_preferred_solution %>
+    <%= form.select :preferred_solution, Ticket::RESOLUTIONS, include_blank: true, id: :ticket_preferred_solution %>
   </div>
 
   <div class="actions">
