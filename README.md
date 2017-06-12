@@ -1,5 +1,19 @@
 # Customer service tickets
 
+## Requirements
+
+* Ruby 2.4.1
+* PostgreSQL
+
+## Setup
+
+Run `bundle install` to install application dependencies.
+
+Run `rake db:setup` to create the databases and seed data. You might want to
+edit `database.yml` to match your environment.
+
+Start the app server with `bin/rails s`
+
 ## Some things to note...
 
 * Because we’re not logged in, we can’t filter to show the customer’s orders, so
