@@ -32,3 +32,8 @@ Run with `bundle exec rspec`
 * We might want to add database level constraints on the tickets table rather
   than relying on ActiveRecord.
 
+* I added one feature spec to test through the stack. The idea being that you
+  would have many unit tests and a few high-level features to verify that
+  everything "hangs together". It doesn't test every code path, nor should it,
+  but checks that you can create a ticket.
+
