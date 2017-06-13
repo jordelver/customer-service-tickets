@@ -37,3 +37,7 @@ Run with `bundle exec rspec`
   everything "hangs together". It doesn't test every code path, nor should it,
   but checks that you can create a ticket.
 
+* If logic became any more complicated than what we already have in the tickets
+  controller I'd be very tempted to use something like this:
+  https://github.com/collectiveidea/interactor
+
