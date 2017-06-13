@@ -14,6 +14,10 @@ edit `database.yml` to match your environment.
 
 Start the app server with `bin/rails s`
 
+## Tests
+
+Run with `bundle exec rspec`
+
 ## Some things to note...
 
 * Because we’re not logged in, we can’t filter to show the customer’s orders, so
